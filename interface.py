@@ -38,7 +38,9 @@ def contient_C4_induit(matriceadj):
                             if matriceadj[i][l] == 1 and matriceadj[k][l] == 1:
                                if matriceadj[i][k] == 0 and matriceadj[j][l] == 0:
                                    return True
-
+                        excluded_values.pop()
+                excluded_values.pop()
+        excluded_values.pop()
     return False
         
     
@@ -60,7 +62,10 @@ def contient_C5_induit(matriceadj):
                                     if matriceadj[i][h] == 1 and matriceadj[l][h] == 1:
                                        if matriceadj[i][k] == 0 and matriceadj[j][l] == 0 and matriceadj[i][l] == 0 and matriceadj[j][h] == 0 and matriceadj[k][h] == 0 :
                                            return True
-
+                                excluded_values.pop()
+                        excluded_values.pop()
+                excluded_values.pop()
+        excluded_values.pop()
     return False
   
     
